@@ -10,7 +10,16 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: $white;
 }
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $fixedWidth;
+  height: 100%;
+  padding: 190px;
+
+
   width: $fixedWidth;
   h1 {
     font-size: 85px;
