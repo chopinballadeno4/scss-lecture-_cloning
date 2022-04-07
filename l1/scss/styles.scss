@@ -18,9 +18,12 @@ header {
   width: $fixedWidth;
   height: 100%;
   padding: 190px;
+  padding: 10vh 0 72px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $red;
 
-
-  width: $fixedWidth;
   h1 {
     font-size: 85px;
     width: 50%;
@@ -31,20 +34,30 @@ header {
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 40px;
+  }
+  h3, p {
     width: 70%;
     line-height: 1.2;
     text-align: justify;
   }
   p {
-    width: 70%;
-    line-height: 1.2;
-    text-align: justify;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 40px;
   }
   nav {
-  }
-  p {
+    width: 80%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        cursor: pointer;
+        margin-right: 12px;
+        font-size: 20px;
+        color: black;
+        opacity: 0.5;
+        padding-bottom: 5px;
+      }
+    }
   }
 }
