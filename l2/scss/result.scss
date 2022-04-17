@@ -121,6 +121,10 @@ header {
         a {
           border: 1px solid black;
           padding: 20px;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
         }
       }
     }
@@ -128,4 +132,40 @@ header {
     div {
       width: 50%;
     }
+  }
+
+  .blog {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 60vh);
+      margin-bottom: 80px;
+      .blog__post {
+          background-color: $bg;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          &:nth-child(even) {
+              img {
+                  order: 1;
+              }
+          }
+          img {
+              width: 100%;
+              height: 100%;
+          }
+          .post__content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .post__date {
+                  @extend %miniTitle;
+                  margin-bottom: 70px;
+              }
+              h4 {
+                font-size: 32px;
+                margin-bottom: 40px;
+              }
+          }
+      }
   }
