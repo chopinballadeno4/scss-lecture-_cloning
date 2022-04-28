@@ -112,3 +112,16 @@ header {
         width: 50%;
     }
 }
+
+.blog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 60vh);
+    margin-bottom: 80px;
+    .blog__post {
+        background-color: $bg;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
