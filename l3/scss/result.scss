@@ -11,16 +11,38 @@ body {
     background-color: $bg;
     display: grid;
     grid-template-columns: 1.5fr 1.9fr 1.5fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 1fr 5fr 1fr;
     gap: 1px;
     & > * {
         background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: $bg;
+        font-size: 22px;
+        text-transform: uppercase;
     }
     .menu {
         grid-column-start: -2;
+    }
+    .center-image {
+        grid-column: 2 / -2;
+        grid-row: 2 / -2;
+    }
+    .number__row {
+        background-color: $bg;
+        display: grid;
+        gap: 1px;
+        height: 100%;
+        align-items: stretch;
+        .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            cursor: pointer;
+            transition: color 0.3s linear, background-color 0.3s linear;
+        }
     }
 }
 
